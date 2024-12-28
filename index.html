@@ -13,7 +13,7 @@
         }
 
         header {
-            background-color: #007bff;
+            background-color: red;
             color: white;
             padding: 1rem 2rem;
             text-align: center;
@@ -50,7 +50,7 @@
             display: inline-block;
             margin-top: 0.5rem;
             padding: 0.5rem 1rem;
-            background-color: #007bff;
+            background-color: red;
             color: white;
             border: none;
             border-radius: 3px;
@@ -59,7 +59,7 @@
         }
 
         .story-item button:hover {
-            background-color: #0056b3;
+            background-color: lightcoral;
         }
 
         #pdf-viewer {
@@ -68,6 +68,23 @@
             margin-top: 2rem;
             border: 1px solid #ddd;
             display: none; /* Initially hidden */
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
     <script>
@@ -86,20 +103,27 @@
     <div class="container">
         <h2>Available Stories</h2>
         <div class="story-list">
+
             <div class="story-item">
-                <h3>Story 1</h3>
-                <button onclick="showPDF('stories/story1.pdf')">Read Now</button>
+                <h3>الدجاجة الصغيرة الحمراء-1</h3>
+                <button onclick="showPDF('story/الدجاجة الصغيرة الحمراء.pdf')">Read Now</button>
             </div>
+
             <div class="story-item">
-                <h3>Story 2</h3>
-                <button onclick="showPDF('stories/story2.pdf')">Read Now</button>
+                <h3>ابن جبير في مصر والحجاز</h3>
+                <button onclick="showPDF('story/ابن جبير في مصر والحجاز.pdf')">Read Now</button>
             </div>
+
             <div class="story-item">
-                <h3>Story 3</h3>
-                <button onclick="showPDF('stories/story3.pdf')">Read Now</button>
+                <h3>أبو الحسن</h3>
+                <button onclick="showPDF('story/أبو الحسن.pdf')">Read Now</button>
             </div>
+
+            <!-- Add more stories as needed -->
+
         </div>
 
+        <!-- PDF Viewer -->
         <iframe id="pdf-viewer"></iframe>
     </div>
 
